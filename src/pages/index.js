@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react';
 import { render } from 'react-dom';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import Home from '../containers/Home';
-import DanmuView from '../containers/DanmuView';
+import BarrageView from '../containers/BarrageView';
+import './index.less';
 
 render(
     <Fragment>
         <HashRouter>
             <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/danmu" exact render={DanmuView} />
+                <Route path="/" exact component={BarrageView} />
+                <Route path="/barrage" exact component={BarrageView} />
             </Switch>
         </HashRouter>
     </Fragment>,
